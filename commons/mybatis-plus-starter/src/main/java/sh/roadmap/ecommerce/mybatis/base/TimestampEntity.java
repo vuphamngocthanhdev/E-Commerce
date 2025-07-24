@@ -29,7 +29,7 @@ import java.time.LocalDateTime;
  */
 @Getter
 @Setter
-public class TimestampEntity implements Serializable {
+public abstract class TimestampEntity implements Serializable {
 
     /**
      * A unique identifier for the serialized class version.
