@@ -30,5 +30,10 @@
             <artifactId>spring-security-core</artifactId>
             <version>6.5.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-jsqlparser</artifactId>
+            <version>3.5.12</version>
+        </dependency>
     </dependencies>
 </project>
