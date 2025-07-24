@@ -5,24 +5,25 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>sh.roadmap.ecommerce</groupId>
-        <artifactId>E-Commerce</artifactId>
+        <artifactId>commons</artifactId>
         <version>${revision}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>commons</artifactId>
-    <name>Common Frameworks</name>
-    <modules>
-        <module>mybatis-plus-starter</module>
-        <module>redis-cache-starter</module>
-        <module>core-starter</module>
-    </modules>
-    <packaging>pom</packaging>
+    <artifactId>core-starter</artifactId>
+    <name>Core starter</name>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>3.4.7</version>
+        </dependency>
+    </dependencies>
 </project>
