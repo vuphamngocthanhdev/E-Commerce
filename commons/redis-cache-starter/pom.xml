@@ -5,23 +5,29 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>sh.roadmap.ecommerce</groupId>
-        <artifactId>E-Commerce</artifactId>
+        <artifactId>commons</artifactId>
         <version>${revision}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>commons</artifactId>
-    <name>Common Frameworks</name>
-    <modules>
-        <module>mybatis-plus-starter</module>
-        <module>redis-cache-starter</module>
-    </modules>
-    <packaging>pom</packaging>
+    <artifactId>redis-cache-starter</artifactId>
+    <name>Redis Cache Starter</name>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <version>3.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+    </dependencies>
 </project>

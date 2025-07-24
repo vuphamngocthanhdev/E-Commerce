@@ -22,6 +22,7 @@
     <properties>
         <java-version>21</java-version>
         <revision>1.0-SNAPSHOT</revision>
+        <jackson-databind>2.19.2</jackson-databind>
         <org.apache.commons>3.18.0</org.apache.commons>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
@@ -46,6 +47,11 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${org.apache.commons}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson-databind}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
