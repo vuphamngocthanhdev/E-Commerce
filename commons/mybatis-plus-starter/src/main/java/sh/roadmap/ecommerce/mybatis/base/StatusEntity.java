@@ -26,7 +26,7 @@ import java.io.Serializable;
  */
 @Getter
 @Setter
-public class StatusEntity implements Serializable {
+public class StatusEntity extends SoftDeleteEntity implements Serializable {
 
     /**
      * A unique identifier for the serialized class version.
