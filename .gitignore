@@ -1,0 +1,68 @@
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.iml
+*.hprof
+*.DS_Store
+
+# Compiled class files
+target/
+bin/
+build/
+
+# Package distribution
+dist/
+out/
+
+# Spring Boot specific
+.spring-boot-devtools.properties
+.spring-boot-devtools/
+
+# IntelliJ IDEA ###
+.idea/
+*.iws
+*.ipr
+!.mvn/wrapper/maven-wrapper.jar
+
+# VSCode (if used)
+.vscode/
+
+# Logs
+logs/
+*.pid
+*.seed
+*.gz
+
+# OS-specific
+Thumbs.db
+ehthumbs.db
+.DS_Store
+Icon?
+
+# Environment variables
+.env
+.env.*
+
+# Test reports
+test-output/
+surefire-reports/
+jacoco.exec
+
+# Database
+*.h2.db
+*.mv.db
+*.db
+*.sqlite
+
+# IDE auto-save or backup files
+*.swp
+*.swo
+*~
+
+# Maven wrapper
+.mvn/
+mvnw
+mvnw.cmd
