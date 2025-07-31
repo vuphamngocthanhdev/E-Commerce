@@ -37,7 +37,7 @@ public class MessageSourceConfig {
     @Bean
     public ResourceBundleMessageSource messageSource() {
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-        messageSource.setBasenames("messages", "validation");  // Support multiple base names
+        messageSource.setBasenames("i18n/messages", "i18n/validation");  // Support multiple base names
         messageSource.setDefaultEncoding("UTF-8");
         messageSource.setDefaultLocale(Locale.ENGLISH);
         messageSource.setUseCodeAsDefaultMessage(true);
