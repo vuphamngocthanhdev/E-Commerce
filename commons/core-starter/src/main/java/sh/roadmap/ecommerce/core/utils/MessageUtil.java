@@ -3,6 +3,7 @@ package sh.roadmap.ecommerce.core.utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
+import org.springframework.stereotype.Component;
 
 /**
  * Utility class for retrieving localized messages from a MessageSource.
@@ -13,6 +14,7 @@ import org.springframework.context.i18n.LocaleContextHolder;
  *   <li>@Autowired: Injects the MessageSource bean into the constructor.</li>
  * </ul>
  */
+@Component
 public class MessageUtil {
 
     /**
